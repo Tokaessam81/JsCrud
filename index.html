@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="w-75 m-auto py-5">
+  <div class="form-group ">
+    <label for="ProductName" class="form-label">ProductName</label>
+    <input class="form-control" id="ProductName" >
+  </div>
+  <div class="form-group ">
+    <label for="ProductPrice" class="form-label">ProductPrice</label>
+    <input  class="form-control" id="ProductPrice">
+  </div>
+    <div class="form-group">
+    <label for="ProductCategory" class="form-label">ProductCategory</label>
+    <input  class="form-control" id="ProductCategory">
+  </div>
+ <div class="form-group">
+    <label for="ProductDescription" class="form-label">ProductDescription</label>
+    <textarea type="text"  class="form-control" id="ProductDescription"></textarea>
+ </div>
+  <button id="MainId" onclick="addProduct()" class="btn btn-outline-info mt-4">Add Product</button>
+  </div>
+  
+  <div class="w-75 m-auto py-3">
+      <input onkeyup="ProductSearch(this.value)" type="text" id="searchInput" class="form-control w-75 m-auto" placeholder="Search Product">
+   <table class="table my-3">
+    <thead>
+        <th>Index</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Category</th>
+        <th>Product Description</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </thead>
+    <tbody id="tableBody">
+     
+    </tbody>
+   </table>
+  </div>
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>
